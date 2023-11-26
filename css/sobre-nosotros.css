@@ -1,0 +1,179 @@
+/*Header*/
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.navegacion-header .resaltar{
+    color: #90e0ef;
+}
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+nav ul{
+    background-color: #016274;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 82px;
+}
+.img-header{
+    margin-left: 25px;
+}
+.navegacion-header a{
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+}
+.navegacion-header a:hover{
+    color: #90e0ef;
+}
+@media (max-width: 702px ) {
+    nav ul{
+        display: block;
+        height: 300px;
+    }
+    .img-header{
+        text-align: center;
+    }
+    .navegacion-header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 23px;
+    }
+}
+/*secion 1 contenido*/
+.seccion-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 50px 50px;
+}
+.texto-1 h3{
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.texto-1 p{
+    font-size: 23px;
+    text-align: justify;
+}
+.seccion-1 .imagen-1 img{
+    border-radius: 20px;
+    width: 500px;
+}
+@media (max-width: 1200px) {
+    .seccion-1{
+        display: block;
+    }
+    .texto-1 p{
+        margin-bottom: 30px;
+    }
+    .seccion-1 .imagen-1 img{
+        width: 100%;
+    }
+}
+/*seccion 2 (nuestra historia)*/
+.nuestra-historia {
+    background-color: #016274;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    gap: 35%;
+}
+@media (max-width: 702px) {
+    .nuestra-historia{
+        gap: 20%;
+    }
+}
+@media (max-width: 348px) {
+    .nuestra-historia{
+        display: block;
+    }
+    .texto-1 h3{
+        font-size: 30px;
+    }
+}
+.img-nuestra-historia img{
+    margin-left: 55px;
+}
+.nuestra-historia h3{
+    color: white;
+    margin-left: -50%;
+    font-size: 30px;
+}
+/*seccion 3 (nuestra historia)*/
+.contenido-3{
+    padding: 50px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.texto-3 h3{
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.texto-3 p{
+    font-size: 23px;
+    text-align: justify;
+    padding-bottom: 50px;
+}
+.contenido-3 .imagen-3 img{
+    margin: 0 auto;
+    border-radius: 40px;
+    width: 100%;
+}
+/* footer de la pagina */
+.copyright{
+    height: 50px;
+    background-color: #016274;
+    color: white;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #016274;
+}
+footer hr{
+    border: 1px solid white;
+    width: 80%;
+}
+.redes-sociales{
+    display: flex;
+    flex-direction: row;
+}
+.redes-sociales img{
+    padding: 6px;
+}
+.redes-sociales img:hover{
+    transition-duration: 0.29s;
+    padding: 10px;
+}
+footer h3, img{
+    margin: 5px;
+    color: white;
+}
+footer h3:hover{
+    color: #90e0ef;
+    transition-duration: 0.55s;
+}
+footer .contactos-sociales{
+    display: flex;
+    gap: 30px;
+    color: white;
+}
+@media (max-width:400px) {
+    footer .contactos-sociales{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .redes-sociales img{
+        width: 50px;
+    }
+}

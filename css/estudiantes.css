@@ -1,0 +1,108 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.navegacion-header .resaltar{
+    color: #90e0ef;
+}
+body{
+    background-image: url(./../Assets/img-estudiantes/Fondo-estudiantes.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+nav ul{
+    background-color: #016274;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 82px;
+}
+.img-header{
+    margin-left: 25px;
+}
+.navegacion-header a{
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 19.2px;
+}
+.navegacion-header a:hover{
+    color: #90e0ef;
+}
+.registro-estudiantes{
+    height: 450px;
+    max-width: 702px;
+    background-color: rgba(1, 99, 116, 0.809);
+    padding: 28px;
+    margin: 10% 28px;
+    border-radius: 20px;
+}
+.registro-estudiantes h3, p{
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+.formulario-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.formularios{
+    width: 49%;
+}
+.comentario-llenar textarea{
+    padding: 40px 0px 40px 0px;
+    margin: 15px;
+    border-radius: 15px;
+    width: 99%;
+    border-style: none;
+}
+.formularios input{
+    padding: 13px;
+    margin: 15px;
+    border-radius: 15px;
+    width: 90%;
+    border-style: none;
+}
+.formulario-boton input{
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #90e0ef;
+    border-radius: 20px;
+    border-style: none;
+}
+.formulario-boton input:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 666px ) {
+    nav ul{
+        display: block;
+        height: 300px;
+    }
+    .img-header{
+        text-align: center;
+    }
+    .navegacion-header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 23px;
+    }
+    .registro-estudiantes{
+        height: 100%;
+    }
+    .formularios{
+        width: 100%;
+    }
+    .comentario-llenar textarea{
+        width: 94%;
+    }
+}
+
