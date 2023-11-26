@@ -30,21 +30,6 @@ nav ul{
 .navegacion-header a:hover{
     color: #90e0ef;
 }
-@media (max-width: 702px ) {
-    nav ul{
-        display: block;
-        height: 300px;
-    }
-    .img-header{
-        text-align: center;
-    }
-    .navegacion-header{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        font-size: 23px;
-    }
-}
 /*secion 1 contenido*/
 .seccion-1{
     display: flex;
@@ -90,13 +75,18 @@ nav ul{
     .nuestra-historia{
         gap: 20%;
     }
-}
-@media (max-width: 348px) {
-    .nuestra-historia{
+    nav ul{
         display: block;
+        height: 300px;
     }
-    .texto-1 h3{
-        font-size: 30px;
+    .img-header{
+        text-align: center;
+    }
+    .navegacion-header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 23px;
     }
 }
 .img-nuestra-historia img{
@@ -175,5 +165,11 @@ footer .contactos-sociales{
     }
     .redes-sociales img{
         width: 50px;
+    }
+    .nuestra-historia{
+        display: block;
+    }
+    .texto-1 h3{
+        font-size: 30px;
     }
 }
