@@ -80,11 +80,10 @@ nav ul{
 .formulario-boton input:hover{
     cursor: pointer;
 }
-
 @media (max-width: 666px ) {
     nav ul{
         display: block;
-        height: 300px;
+        height: 250px;
     }
     .img-header{
         text-align: center;

@@ -30,21 +30,138 @@ nav ul{
 .navegacion-header a:hover{
     color: #90e0ef;
 }
-@media (max-width: 702px ) {
-    nav ul{
-        display: block;
-        height: 300px;
+
+/*Main*/
+.parrafo {
+    margin: 2rem;
+}
+.link{
+    color: #90e0ef;
+    font-size: 1.5rem;
+}
+.banner img{
+    width: 100%;
+}
+.cards{
+    height: 13rem;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-evenly;
+}
+.card{
+    width: 10rem;
+    height: 10rem;
+    background-color: rgb(254, 254, 254);
+}
+.card__imagen{
+    width: 100%;
+}
+.card__titulo{
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+.contenedor_2{
+    display: flex;
+    flex-direction: row;
+    margin: 5rem;
+}
+.cont_1{
+    width:40%;
+    margin-right: 5rem;
+}
+.cont_2{
+    width:47%;
+}
+.titulo_cont{
+    margin-top: 1.5rem;
+    text-align: center;
+}
+.text{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.img__banner2{
+    width: 100%;
+    background-color: gray;
+    border-radius: 50%;
+}
+.cards2{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+.card2{
+    width: 21rem;
+    height: 24.7rem;
+    background-color: rgb(254, 254, 254);
+    border: 1px solid #D2D2D2;
+    border-radius: 0.7rem;
+}
+.card__boton{
+    background-color:#BB2D3B;
+    color:white;
+    width: 8rem;
+    padding: 0.68rem;
+    border:none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+}
+.card_titulo_{
+    border-bottom:1px solid #D2D2D2;
+    padding: 1rem;
+}
+.sub_red{
+   text-decoration: underline;
+    color: red;
+}
+.sub{
+    margin-left: 0.2rem;
+    border-bottom:1px solid #D2D2D2;
+    padding: 0.3rem;
+    font-weight: normal;
+    font-size: 1rem;
+}
+.sub_border{
+    border-bottom: none;
+}
+
+@media (max-width:965px) {
+    .cards{
+        display: flex;
+        flex-direction: row;
+        height: 48rem;
+        justify-content: center;
     }
-    .img-header{
-        text-align: center;
+    .card{
+        width:18rem;
+        height: 13rem;
     }
-    .navegacion-header{
+    .cards2{
+        height: 80rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .card2{
+        width: 30rem;
+    }
+    .contenedor_2{
         display: flex;
         flex-direction: column;
-        text-align: center;
-        font-size: 23px;
+        margin: 2rem;
+        align-items: center;
+    }
+    .text{
+        text-align:justify;
     }
 }
+@media (max-width:710px) {
+
+}
+
 /* footer de la pagina */
 .copyright{
     height: 50px;
@@ -72,7 +189,7 @@ footer hr{
     transition-duration: 0.29s;
     padding: 10px;
 }
-footer h3, img{
+footer h3, footer img{
     margin: 5px;
     color: white;
 }
@@ -82,10 +199,68 @@ footer h3:hover{
 }
 footer .contactos-sociales{
     display: flex;
-    gap: 30px;
     color: white;
 }
+footer .contactos p{
+    margin: 10px 5px
+}
+@media (max-width: 702px ) {
+    nav ul{
+        display: block;
+        height: 250px;
+    }
+    .img-header{
+        text-align: center;
+    }
+    .navegacion-header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 23px;
+    }
+    .img_banner{
+        width: 100%;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        width:10rem;
+        height: 10rem;
+    }
+    .cards2{
+        height: 80rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .card2{
+        width: 30rem;
+    }
+}
 @media (max-width:400px) {
+    .contenedor_2{
+        display: flex;
+        flex-direction: column;
+    }
+    .cont_1{
+        width:80%;
+    }
+    .cont_2{
+        width:80%;
+    }
+    .titulo_cont{
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+    .text{
+        font-size: 1rem;
+        text-align: center;
+    }
     footer .contactos-sociales{
         display: flex;
         flex-direction: column;

@@ -33,7 +33,7 @@ nav ul{
 @media (max-width: 702px ) {
     nav ul{
         display: block;
-        height: 300px;
+        height: 260px;
     }
     .img-header{
         text-align: center;
@@ -205,8 +205,10 @@ footer h3:hover{
 }
 footer .contactos-sociales{
     display: flex;
-    gap: 30px;
     color: white;
+}
+footer .contactos p{
+    margin: 10px 5px
 }
 @media (max-width:400px) {
     footer .contactos-sociales{
