@@ -54,7 +54,12 @@ nav ul{
 }
 @media (max-width: 1200px) {
     .seccion-1{
-        display: block;
+        display: flex;
+        flex-direction: column;
+    }
+    .seccion-2{
+        display: flex;
+        flex-direction: column-reverse;
     }
     .texto-1 p{
         margin-bottom: 30px;
